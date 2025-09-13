@@ -67,6 +67,26 @@ cosh:: (x)
 tanh:: (x)
 round:: (x) -> round signal value to the nearest integer
 
+=== Fast Trigonometric Oscillators
+
+Some oscillators and functions have a `'` suffix to indicate a faster but less accurate implementation.
+
+[horizontal]
+s':: (freq) -> fast sine oscillator
+c':: (freq) -> fast cosine oscillator
+sine':: (freq, phase0) -> fast sine oscillator with initial phase
+cosine':: (freq, phase0) -> fast cosine oscillator with initial phase
+sin':: (x) -> fast approximation of sin(x)
+cos':: (x) -> fast approximation of cos(x)
+tan':: (x) -> fast approximation of tan(x)
+sinc':: (x) -> fast approximation of sinc(x)
+
+=== Constants
+
+[horizontal]
+pi:: () -> constant π
+tau:: () -> constant τ = 2π
+
 === Filters
 
 [horizontal]
